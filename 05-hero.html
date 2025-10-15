@@ -6,24 +6,70 @@
   <title>Omifood Hero Section</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box ;
+    }
+
    html {
-    font-family: 'Rubik', sans-serif
+    font-family: "Rubik", sans-serif;
     color: #444;
    }
+
+   .container{
+    margin: 0 auto;
+    width: 1200px;
+    
+   }
+
+   header {
+    /* background-color: violet; */
+    height: 100vh;
+    position: relative;
+
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(hero.jpg);
+    background-size:cover ;
+    color: #fff;
+    
+  }
+    
+    
 
    nav{
     font-size: 20px;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
+    padding-top: 32px;
+    /* background-image: linear-gradient(); */
+    /* background-color: green; */
+    
+   }
+
+   .header-container{
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: aqua;
+   
+   }
+
+   .header-container-inner{
+    width: 50%;
+    /* background-color: blue; */
+    position: absolute;
    }
 
    h1{
     font-size: 52px;
     margin-bottom: 32px;
+    line-height: 1.05;
    }
 
    p{
@@ -32,6 +78,29 @@
     margin-bottom: 48px;
    }
 
+   .btn:link,
+   .btn:visited{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e67822;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 9px;
+   }
+
+   h2{
+    font-size: 44px;
+    margin-bottom: 48px;
+   }
+   
+   section{
+    padding: 96px 0;
+    background-color: #f7f7f7;
+    
+   }
+   
 
   </style>
 </head>
@@ -39,21 +108,23 @@
 
   <header>
 
-    <nav>
+    <nav class="container">
       <div>LOGO</div>
       <div>NAVIGATION</div>
     </nav>
 
-    <div>
+    <div class="header-container">
+      <div class="header-container-inner">
       <h1>A healty meal delivered to youur door, every single day</h1>
       <p> The smart 365-days-per-year food subcription tha will make you eat healty again. Tailored
         to your and nutritional needs.</p>
         <a href="#" class="btn">Start eating well</a>
     </div>
+    </div>
   </header>
 
   <section>
-    <div>
+    <div class="container">
       <h2>Some random heading</h2>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Eveniet minus non optio nesciunt consectetur nobis officiis 
